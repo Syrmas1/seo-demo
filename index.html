@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Παιχνίδι Μαθηματικών</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <script src="JS/Script.js" defer></script>
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Μαθηματική Πρόκληση</h1>
+
+        <!-- Οδηγίες και Κουμπί Έναρξης -->
+        <div id="start-screen">
+            <p><strong>Οδηγίες:</strong> Λύστε όσες περισσότερες προσθέσεις και αφαιρέσεις μπορείτε με τριψήφιους αριθμούς πριν τελειώσει ο χρόνος!</p>
+            <button id="start-btn">Έναρξη Παιχνιδιού</button>
+        </div>
+
+        <!-- Περιοχή Παιχνιδιού -->
+        <div id="game-area" class="hidden">
+            <div id="timer">Χρόνος: <span>30</span>s</div>
+            <div id="score">Σκορ: <span>0</span></div>
+
+            <div class="problem">
+                <span id="num1">000</span>
+                <span id="operator">+</span>
+                <span id="num2">000</span>
+                <span>=</span>
+                <input type="number" id="answer-input" placeholder="?">
+            </div>
+
+            <button id="submit-btn">Υποβολή</button>
+        </div>
+
+        <!-- Τελικό Σκορ -->
+        <div id="result-screen" class="hidden">
+            <h2>Τέλος Χρόνου!</h2>
+            <p>Το τελικό σας σκορ είναι: <span id="final-score">0</span></p>
+        </div>
+    </div>
+</body>
+</html>
